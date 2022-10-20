@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  border: none;
+  outline: none;
+  font-weight: 300;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+ background-image: linear-gradient(to right, blue, aqua);
+}
+
+.logo {
+  justify-content: left;
+  font: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  display: flex;
+  height: 80px;
+  margin-left: 5px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  height: 10vh;
+
+}
+
+header nav ul li a{
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul li a:hover{
+    font-size: larger;
+    background-color: rgb(70, 104, 255);
+    border-radius: 7px;
+    transition: 0.5s;
+
+}
+.menu {
+    display: flex;
+    letter-spacing: 5px;
+    text-decoration:none ;
+    list-style: none;
+    align-items: center;
+}
+
+/*LANÇAMENTO*/
+.outdoor{
+    margin-top: 0;
+    height: 300px;
+    width: 100%;
+    background-image: url('https://assets.xboxservices.com/assets/24/68/2468bb91-d4c3-474d-b5cf-0171bdcadc4d.jpg?n=008532344_Feature-Image-Priority-Full-Width-0_01_1248x702.jpg');
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size:100%;
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    padding: 0em;
+    right: 0;
+    text-align: center;
+    top: 0;
+    background-size: cover;
+}
+
+/*NOTICIAS*/
+
+.title{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: blue;
+    padding-top: 5px;
+}
+.noticias {
+    display: flex;
+    flex-wrap: wrap;
+	width: 100%;
+	float: left;
+	padding: 2% 0;
+    background-color: white;
+    justify-content: center;
+    background-image: url('https://img.freepik.com/vetores-premium/padrao-sem-emenda-de-espaco-com-rabiscos-para-estampas-infantis_67074-1187.jpg');
+}
+
+.noticia {
+	width: 100%;
+	text-align: left;
+	margin-bottom: 3%;
+    max-width: 350px;
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    border-radius: 7px 7px;
+    margin: 10px 20px;
+}
+
+.noticia:hover{
+    font-size: larger;
+    background-color: rgb(70, 104, 255);
+    border-radius: 7px;
+    transition: 0.5s;
+}
+
+.noticia img {
+    width: 300px;
+	border-radius: 7px 7px 0 0;
+}
+.inner{
+	padding: 7%;
+}
+
+.inner a {
+	font-size: 1.5em;
+	color: #130400;
+	font-weight: 700;
+    text-decoration: none;
+
+}
+
+.inner h4 {
+	font-size: 1.2em;
+	color: #130400;
+	margin-top: 2%;
+}
+
+.inner p {
+	margin-top: 6%;
+	color: #130400;
+	line-height: 1.5em;
+}
+
+/*NEWSLETTER*/
+.newsletter{
+    text-align: center;
+    background-color: #00ffff;
+    padding-bottom: 10px;
+}
+
+.newsletter h2 {
+	font-size: 1.5em;
+	color: rgb(61, 97, 255);
+	font-weight: 700;
+}
+
+.newsletter h3 {
+	color: rgb(255, 255, 255);
+}
+
+.newsletter form {
+	margin-top: 0%;
+}
+
+.newsletter input {
+	width: 60%;
+	color: rgb(59, 79, 255);
+	border: 1px solid rgba(36, 87, 255, 0.3);
+	padding: 2%;
+    margin-top: 0;
+    border-radius: 7px 7px;
+}
+
+.newsletter button {
+    width: 25%;
+	color: #ffffff;
+    background-color: rgb(59, 79, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 17px;
+	padding: 2%;
+	cursor: pointer;
+	margin-top: 1%;
+    border-radius: 7px 7px;
+}
+
+.video{
+    position:relative;
+	padding-bottom:50.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+	margin-bottom:1em;
+}
+.video iframe{
+    position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
