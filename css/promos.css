@@ -1,0 +1,186 @@
+body{
+background-image: url('https://img.freepik.com/vetores-premium/padrao-sem-emenda-de-espaco-com-rabiscos-para-estampas-infantis_67074-1187.jpg');
+background-attachment: fixed;
+}
+.product{
+    background-color: white;
+    border-radius: 20px 20px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    margin-top: 5%;
+    margin-bottom:5%;
+}
+
+.product-category{
+    padding: 0 10vh;
+    font-size: 30px;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+.product-container{
+    padding: 0 10vh;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    margin-top: 5%;
+}
+
+.product-container::-webkit-scrollbar{
+    display: none;
+}
+
+.product-card{
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+}
+
+.product-image{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.product-thumb{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-btn{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: white;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.product-card:hover .card-btn{
+    opacity: 1;
+}
+
+.card-btn:hover{
+    background: blue;
+    color: white;
+}
+
+.jogobase{
+    opacity: 0.7;
+}
+
+.product-info{
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+}
+
+.product-brand{
+    text-transform: uppercase;
+    color: blue;
+    font-weight: bold;
+}
+
+.short-description{
+    width: 20%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    margin: 5px 0;
+    background-color: aqua;
+    border-radius: 7px 7px;
+}
+
+.actual-price{
+    color: black;  
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.pre-btn,
+.nxt-btn{
+    border: none;
+    width: 10vh;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(225, 225, 225, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+}
+
+.pre-btn{
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.nxt-btn{
+    right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img{
+    opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img{
+    opacity: 1;
+}
+
+.collection-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.collection{
+    position: relative;
+}
+
+.colection img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collection p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.colection:nth-child(3){
+    grid-column: span 2;
+    margin-bottom: 10px;
+}
+
+@media(max-width: 700px){
+    .product-category h2{
+        font-size: 40px;
+    }
+}
