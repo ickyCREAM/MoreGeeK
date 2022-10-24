@@ -1,6 +1,5 @@
 ::-webkit-scrollbar{
-    background-color: rgba(255, 255, 255, 0.527);
-    border-radius: 20px;
+    background-color: #0e003d;
     color: black;
 }
 ::-webkit-scrollbar-thumb{
@@ -22,7 +21,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
- background-image: linear-gradient(to right, blue, aqua);
+ background-image: linear-gradient(to right, blue, #0e003d);
 }
 
 .logo {
@@ -51,7 +50,7 @@ header nav ul li a{
 
 header nav ul li a:hover{
     font-size: larger;
-    background-color: rgb(70, 104, 255);
+    background-color: #d9fb008a;
     border-radius: 7px;
     transition: 0.5s;
 
@@ -69,7 +68,7 @@ header nav ul li a:hover{
     margin-top: 0;
     height: 300px;
     width: 100%;
-    background-image: url('https://assets.xboxservices.com/assets/24/68/2468bb91-d4c3-474d-b5cf-0171bdcadc4d.jpg?n=008532344_Feature-Image-Priority-Full-Width-0_01_1248x702.jpg');
+    background-image: url('https://images.hdqwalls.com/wallpapers/saturn-planet-illustration-minimalist-3w.jpg');
     background-attachment: fixed;
     background-position: center top;
     background-repeat: no-repeat;
@@ -103,7 +102,7 @@ header nav ul li a:hover{
 	padding: 2% 0;
     background-color: white;
     justify-content: center;
-    background-image: url('https://img.freepik.com/vetores-premium/padrao-sem-emenda-de-espaco-com-rabiscos-para-estampas-infantis_67074-1187.jpg');
+    background-image: url('/media/fundonot.png');
 }
 
 .noticia {
@@ -111,7 +110,11 @@ header nav ul li a:hover{
 	text-align: left;
 	margin-bottom: 3%;
     max-width: 350px;
-    background-color: rgb(231, 231, 231);
+    background: rgba(255, 255, 255, 0.203);
+    
+    border: 1px solid #fff;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 6px 0 rgba(29, 29, 29, 0.203);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -122,14 +125,14 @@ header nav ul li a:hover{
 
 .noticia:hover{
     font-size: larger;
-    background-color: rgb(70, 104, 255);
+    background-color:blue;
     border-radius: 7px;
     transition: 0.5s;
 }
 
 .noticia img {
     width: 300px;
-	border-radius: 7px 7px 0 0;
+	border-radius: 7px;
 }
 .inner{
 	padding: 7%;
@@ -137,7 +140,7 @@ header nav ul li a:hover{
 
 .inner a {
 	font-size: 1.5em;
-	color: #130400;
+	color: white;
 	font-weight: 700;
     text-decoration: none;
 
@@ -145,26 +148,27 @@ header nav ul li a:hover{
 
 .inner h4 {
 	font-size: 1.2em;
-	color: #130400;
+	color: white;
 	margin-top: 2%;
 }
 
 .inner p {
 	margin-top: 6%;
-	color: #130400;
+	color: white;
 	line-height: 1.5em;
 }
 
 /*NEWSLETTER*/
+
 .newsletter{
     text-align: center;
-    background-color: #00ffff;
+    background-color: blue;
     padding-bottom: 10px;
 }
 
 .newsletter h2 {
 	font-size: 1.5em;
-	color: rgb(61, 97, 255);
+	color: yellow;
 	font-weight: 700;
 }
 
@@ -178,7 +182,7 @@ header nav ul li a:hover{
 
 .newsletter input {
 	width: 60%;
-	color: rgb(59, 79, 255);
+	color: #0e003d;
 	border: 1px solid rgba(36, 87, 255, 0.3);
 	padding: 2%;
     margin-top: 0;
@@ -188,7 +192,7 @@ header nav ul li a:hover{
 .newsletter button {
     width: 25%;
 	color: #ffffff;
-    background-color: rgb(59, 79, 255);
+    background-color: #0e003d;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 17px;
 	padding: 2%;
