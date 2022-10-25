@@ -102,7 +102,7 @@ header nav ul li a:hover{
 	padding: 2% 0;
     background-color: white;
     justify-content: center;
-    background-image: url('media/fundonot.png');
+    background-image: url('/media/fundonot.png');
 }
 
 .noticia {
