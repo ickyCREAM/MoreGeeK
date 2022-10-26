@@ -17,22 +17,22 @@
                 <header>Cadastre-se</header>
                 <form action="#">
                     <div class="field">
-                        <span class="fa fa-user"></span>
-                            <input id= "user" type="text" placeholder="Enter User">
+                        <span class="fa fa-user" id="usericon"></span>
+                            <input id="user" name="user" type="text" placeholder="Enter User"/>
                     </div>
                     <div class="field space">
-                        <span class="fa fa-lock"></span>
-                        <input id="senha" type="password" class="pass-key" placeholder="Password">
+                        <span id="senhaicon" class="fa fa-lock"></span>
+                        <input id="senha" name="password" type="password" class="pass-key" placeholder="Password">
                     </div>
                     <div class="field space">
-                        <span class="fa fa-lock"></span>
+                        <span id="csenhaicon" class="fa fa-lock"></span>
                         <input id="confirmsenha" type="password" class="pass-key" placeholder="Confirm Password">
                     </div>
                     <div class="pass">
                         <a href="login.html">Já tem um usuário? clique aqui</a>
                     </div>
                     <div class="field">
-                        <input onclick="cadastrar()" type="submit" value="CADASTRAR">
+                        <button onclick="VerifyUser()" type="submit" value="CADASTRAR" id="button">CADASTRAR</button>
                     </div>
                 </form>
             </div>

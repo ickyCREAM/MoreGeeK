@@ -107,7 +107,7 @@
 .pass:hover a{
     text-decoration: underline;
 }
-.field input[type="submit"] {
+.field button{
     background: blue;
     border: 1px solid blue;
     color: white;
@@ -117,7 +117,10 @@
     cursor: pointer;
     font-family: "Montserrat", sans-serif;
     transition: 0.3s ease;
+    width: 100%;
+    border-radius: 10px 10px;
 }
+
 
 body .bg-img p {
     color: white;
