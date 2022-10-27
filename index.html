@@ -9,13 +9,18 @@
     <link rel="stylesheet" href="functions.php">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="shortcut icon" href="media/favicon.png" type="image/x-icon" />
+    <script src="scipt.js"></script>
   </head>
 
 <!-- #Header -->
 
-  <body>
-    <header>
-      <img class="logo" src="media/logo.png" alt="Saturno" />
+<body onload="usuarios()">
+  <header>
+    <img class="logo" src="media/logo.png" alt="Saturno" />
+    <div class="usuario">
+      <h3 id="usr"></h3>
+      <button onclick="sair()">sair</button>
+    </div>
       <nav>
         <ul class="menu">
           <li><a href="index.html">Home</a></li>
@@ -24,59 +29,59 @@
           <li><a href="promos.html">Promoções</a></li>
         </ul>
       </nav>
-    </header>
-    <div class="outdoor"></div>
+  </header>
+  <div class="outdoor"></div>
 
 <!-- #Notícias -->
 
-   <main>
+  <main>
     <div class="title">
       <h2>
         <strong>Principais Notícias
       </h2>
     </div>
-          <div class="noticias">
-                  <article class="noticia">
-                      <a href="#"><img src="media/ntcoverwatch.jpg" alt="owc2"></a>
-                      <div class="inner">
-                          <a href="#"> 0verwatch 2</a>
-                          <h4>lançamento 04/10</h4>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed ultricies diam, sed pharetra orci. Cras
-                              rhoncus efficitur enim et iaculis. Maecenas lacinia eros nec lorem tincidunt lobortis. Nam scelerisque pharetra
-                              odio, sed euismod nisi finibus non. Phasellus et semper nibh. Mauris ut quam vestibulum, faucibus massa vel,
-                              consequat diam.</p>
-                          </div>
-                  </article>
-                <article class="noticia">
-                    <a href="#"><img src="media/tw3.jpeg" alt="owc2"></a>
-                    <div class="inner">
-                        <a href="#"> The witcher 3</a>
-                        <h4>Novo mod gráfico</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed ultricies diam, sed pharetra orci. Cras
-                            rhoncus efficitur enim et iaculis. Maecenas lacinia eros nec lorem tincidunt lobortis. Nam scelerisque pharetra
-                            odio, sed euismod nisi finibus non. Phasellus et semper nibh. Mauris ut quam vestibulum, faucibus massa vel,
-                            consequat diam.</p>
-                    </div>
-                </article>
-                <article class="noticia">
-                    <a href="#"><img src="media/gta.jpeg" alt="owc2"></a>
-                    <div class="inner">
-                        <a href="#"> GTA 6</a>
-                        <h4>Novo GTA se passará no Brasil</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed ultricies diam, sed pharetra orci. Cras
-                            rhoncus efficitur enim et iaculis. Maecenas lacinia eros nec lorem tincidunt lobortis. Nam scelerisque pharetra
-                            odio, sed euismod nisi finibus non. Phasellus et semper nibh. Mauris ut quam vestibulum, faucibus massa vel,
-                            consequat diam.</p>
-                        </div>        
-                </article>
-              </div>
-    </main>
+    <div class="noticias">
+      <article class="noticia">
+        <a href="#"><img src="media/ntcoverwatch.jpg" alt="owc2"></a>
+    <div class="inner">
+      <a href="#"> 0verwatch 2</a>
+        <h4>lançamento 04/10</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed ultricies diam, sed pharetra orci. Cras
+            rhoncus efficitur enim et iaculis. Maecenas lacinia eros nec lorem tincidunt lobortis. Nam scelerisque pharetra
+            odio, sed euismod nisi finibus non. Phasellus et semper nibh. Mauris ut quam vestibulum, faucibus massa vel,
+            consequat diam.</p>
+    </div>
+      </article>
+      <article class="noticia">
+        <a href="#"><img src="media/tw3.jpeg" alt="owc2"></a>
+    <div class="inner">
+        <a href="#"> The witcher 3</a>
+          <h4>Novo mod gráfico</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed ultricies diam, sed pharetra orci. Cras
+              rhoncus efficitur enim et iaculis. Maecenas lacinia eros nec lorem tincidunt lobortis. Nam scelerisque pharetra
+              odio, sed euismod nisi finibus non. Phasellus et semper nibh. Mauris ut quam vestibulum, faucibus massa vel,
+              consequat diam.</p>
+    </div>
+        </article>
+        <article class="noticia">
+          <a href="#"><img src="media/gta.jpeg" alt="owc2"></a>
+    <div class="inner">
+        <a href="#"> GTA 6</a>
+          <h4>Novo GTA se passará no Brasil</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed ultricies diam, sed pharetra orci. Cras
+            rhoncus efficitur enim et iaculis. Maecenas lacinia eros nec lorem tincidunt lobortis. Nam scelerisque pharetra
+            odio, sed euismod nisi finibus non. Phasellus et semper nibh. Mauris ut quam vestibulum, faucibus massa vel,
+            consequat diam.</p>
+      </div>        
+        </article>
+    </div>
+  </main>
 
 <!-- #Newsletter -->
 
-    <section class="newsletter container bg-black">
+  <section class="newsletter container bg-black">
 		<h2> Inscreva-se! </h2>
-		<h3> Receba notícias dos melhores lançamentos e promoções</h3>
+		  <h3> Receba notícias dos melhores lançamentos e promoções</h3>
 		<form>
 			<input class="bg-black radius" type="email" name="email" placeholder="Seu melhor e-mail">
 			<button class=" bg-white radius"> Cadastrar </button>
@@ -85,12 +90,13 @@
 
 <!-- #Vídeo -->
 
-<section class="title">
-<h2>Vídeo Destaque Da Semana</h2>
-</section>
-<section class="video">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/AbUhBfjm4kw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</section>
+  <section class="title">
+    <h2>Vídeo Destaque Da Semana</h2>
+  </section>
+  <section class="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/AbUhBfjm4kw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
+  
 <section class="title"></section>
 
 <!-- #Footer -->
