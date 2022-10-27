@@ -1,7 +1,7 @@
 function sair() {
   localStorage.removeItem("userLogado");
   // localStorage.removeItem('token')
-  window.location.href = "teste login/login.html";
+  window.location.href = "login/login.html";
 }
 
 function usuarios() {
