@@ -16,6 +16,6 @@ function cadastrar() {
   localStorage.setItem("listaUser", JSON.stringify(listaUser));
 
   setTimeout(() => {
-    window.location.href = "login.html";
+    window.location.href = "/login.html";
   }, 3000);
 }
