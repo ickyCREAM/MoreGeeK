@@ -1,5 +1,5 @@
 body{
-background-image: url('/media/fundonot.png');
+background-image: url('fundonot.png');
 background-attachment: fixed;
 }
 .title2{
@@ -105,7 +105,7 @@ background-attachment: fixed;
 
 .product-brand{
     text-transform: uppercase;
-    color: blue;
+    color: white;
     font-weight: bold;
 }
 
@@ -117,6 +117,12 @@ background-attachment: fixed;
     margin: 5px 0;
     background-color: yellow;
     border-radius: 7px 7px;
+}
+
+.actual-price s{
+    color: blue;  
+    font-size: 20px;
+    font-weight: 900;
 }
 
 .actual-price{

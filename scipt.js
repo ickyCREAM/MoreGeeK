@@ -8,5 +8,5 @@ function usuarios() {
   var usuario = document.getElementById("usr");
   var userlogado = JSON.parse(localStorage.getItem("userLogado"));
 
-  usuario.innerHTML = "Saudações " + userlogado.user;
+  usuario.innerHTML = userlogado.user;
 }

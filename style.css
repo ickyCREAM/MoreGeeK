@@ -13,38 +13,38 @@
   font-size: 100%;
   border: none;
   outline: none;
-  font-weight: 300;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
- background-image: linear-gradient(to right, blue, #0e003d);
-}
-
-.logo {
-  justify-content: left;
-  font: 24px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  display: flex;
-  height: 80px;
-  margin-left: 5px;
+    background-image: linear-gradient(to right, blue, #0e003d);
 }
 
 nav {
   display: flex;
-  justify-content: space-around;
-  text-align: center;
-  height: 10vh;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
 
 }
 
+.logo {
+    display: flex;
+    height: 80px;
+}
+
+.menu {
+    display: flex;
+    letter-spacing: 2px;
+    text-decoration:none ;
+    list-style: none;
+    align-items: center;
+}
+
 header nav ul li a{
-    margin: 15px;
+    margin: 10px;
     text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: 400;
     color: white;
 }
 
@@ -55,13 +55,31 @@ header nav ul li a:hover{
     transition: 0.5s;
 
 }
-.menu {
+
+.usuario{
     display: flex;
-    letter-spacing: 5px;
-    text-decoration:none ;
-    list-style: none;
     align-items: center;
 }
+.usuario h3{
+    font-size: 17px;
+    color: #fff;
+    background-color: rgb(67, 67, 255);
+    padding: 9px 15px;
+    border-radius: 7px 0px 0px 7px;
+}
+.usuario button{
+    padding: 10px 15px;
+	color: #ffffff;
+    background-color: blue;
+	cursor: pointer;
+    border-radius: 0px 7px 7px 0px;
+}
+.usuario button a{
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+
 
 /*LANÇAMENTO*/
 .outdoor{
@@ -102,7 +120,7 @@ header nav ul li a:hover{
 	padding: 2% 0;
     background-color: white;
     justify-content: center;
-    background-image: url('/media/fundonot.png');
+    background-image: url('fundonot.png');
 }
 
 .noticia {

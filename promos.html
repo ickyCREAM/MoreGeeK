@@ -11,19 +11,26 @@
     <link rel="shortcut icon" href="media/favicon.png" type="image/x-icon" />
     
 </head>
-<body>
+<body onload="usuarios()">
 
-  <header>
-    <img class="logo" src="media/logo.png" alt="Saturno" />
-    <nav>
-      <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Sobre</a>
-        <li><a href="#">Contato</a></li>
-        <li><a href="promos.html">Promoções</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav>
+    
+        <img class="logo" src="media/logo.png" alt="Saturno" />
+    
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Sobre</a>
+          <li><a href="promos.html">Promoções</a></li>
+          </ul>
+    
+          <div class="usuario">
+            <h3 id="usr"></h3>
+            <button onclick="sair()">sair</button>
+          </div>
+    
+          </nav>
+      </header>
 
   <!-- Carrossel -->
   
